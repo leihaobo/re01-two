@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人主页 - 华中科技大学学子</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1 id="main-title">欢迎来到我的主页</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> 首页</a></li>
+                    <li><a href="hust-intro.html"><i class="fas fa-university"></i> 华科简介</a></li>
+                    <li><a href="hust-campus.html"><i class="fas fa-tree"></i> 校园生活</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="profile-section">
+            <div class="profile-card">
+                <div class="profile-image">
+                    <img src="images/profile.jpg" alt="我的照片" id="profile-img">
+                    <div class="image-overlay" id="image-overlay">
+                        <p>点击了解更多</p>
+                    </div>
+                </div>
+                <div class="profile-info">
+                    <h2>关于我</h2>
+                    <p>我是<span id="typewriter"></span></p>
+                    <div class="personal-details">
+                        <p><i class="fas fa-graduation-cap"></i> 华中科技大学 <span id="major"></span>专业</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 中国 · 武汉</p>
+                        <p><i class="fas fa-envelope"></i> <span id="email"></span></p>
+                    </div>
+                    <div class="skills">
+                        <h3>我的技能</h3>
+                        <div class="skill-bars">
+                            <!-- 技能条将通过JavaScript动态生成 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hust-highlight">
+            <h2>我与华中科技大学</h2>
+            <div class="hust-gallery" id="hust-gallery">
+                <!-- 校园图片轮播将通过JavaScript动态生成 -->
+            </div>
+            <div class="hust-links">
+                <a href="hust-intro.html" class="hust-link-btn">了解华科 <i class="fas fa-arrow-right"></i></a>
+                <a href="hust-campus.html" class="hust-link-btn">校园生活 <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 华中科技大学学子 | 设计: <span id="current-year"></span></p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
